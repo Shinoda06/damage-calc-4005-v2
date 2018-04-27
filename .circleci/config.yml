@@ -19,8 +19,3 @@ jobs:
           pass: ./junit
       - store_artifacts:
           path: ./junit
-
-      - restore_cache:
-          keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          - v1-dependencies-
